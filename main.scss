@@ -112,3 +112,39 @@ body{
         grid-area:credits;
     }
 }
+
+@media(max-width:375px){
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+        background-image: url(/images/bg-intro-mobile.png);
+
+        .message{
+            order:1;
+            justify-content: space-around;
+            h1{
+                font-size: 24px;
+            }
+
+            p{
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+        .cards{
+            order:2;
+            align-self: center;
+
+            .card{
+                padding-bottom: 0;
+            }
+        }
+
+        footer{
+            order:3;
+        }
+    }
+}
