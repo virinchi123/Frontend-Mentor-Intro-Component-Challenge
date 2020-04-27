@@ -58,6 +58,14 @@ body{
             margin-top: 10px;
             margin-bottom: 10px;
 
+            .alerts{
+                display: none;
+                margin: 0;
+                margin-left:30%;
+                color:color(Red);
+                font-weight: 600;
+            }
+
             input{
                 margin:10px;
                 height: 30px;
@@ -81,6 +89,12 @@ body{
                 font-weight: 600;
                 color: white;
                 border-bottom: 2px solid darken(color(green),10%);
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: lighten(color(Green),10%);
+                    border-color: color(green);
+                }
             }
 
             p{
@@ -113,7 +127,7 @@ body{
     }
 }
 
-@media(max-width:375px){
+@media(max-width:700px){
     body{
         display: flex;
         flex-direction: column;

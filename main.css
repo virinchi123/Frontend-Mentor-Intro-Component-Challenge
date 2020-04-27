@@ -67,6 +67,14 @@ body .cards .card {
   margin-bottom: 10px;
 }
 
+body .cards .card .alerts {
+  display: none;
+  margin: 0;
+  margin-left: 30%;
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
 body .cards .card input {
   margin: 10px;
   height: 30px;
@@ -94,6 +102,12 @@ body .cards .card button {
   font-weight: 600;
   color: white;
   border-bottom: 2px solid #2ba671;
+}
+
+body .cards .card button:hover {
+  cursor: pointer;
+  background-color: #61d6a3;
+  border-color: #38cc8c;
 }
 
 body .cards .card p {
@@ -126,7 +140,7 @@ body footer {
   grid-area: credits;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
   body {
     display: -webkit-box;
     display: -ms-flexbox;
